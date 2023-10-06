@@ -1,0 +1,29 @@
+.cabecalho{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.cabecalho p {
+    font-size: 2rem;
+    color: white;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lista li{
+    list-style: none;
+    margin-right: 50px;
+    
+}
+.lista li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
