@@ -7,6 +7,7 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { ListarJogadoresComponent } from './componentes/jogadores/listar-jogadores/listar-jogadores.component';
 import { ListarTimesComponent } from './componentes/times/listar-times/listar-times.component';
 import { TextoIntrodutorioComponent } from './componentes/texto-introdutorio/texto-introdutorio.component';
+import { SobreComponent } from './componentes/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TextoIntrodutorioComponent } from './componentes/texto-introdutorio/tex
     CabecalhoComponent,
     ListarJogadoresComponent,
     ListarTimesComponent,
-    TextoIntrodutorioComponent
+    TextoIntrodutorioComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
