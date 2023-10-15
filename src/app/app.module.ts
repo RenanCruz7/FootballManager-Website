@@ -8,6 +8,7 @@ import { ListarJogadoresComponent } from './componentes/jogadores/listar-jogador
 import { ListarTimesComponent } from './componentes/times/listar-times/listar-times.component';
 import { TextoIntrodutorioComponent } from './componentes/texto-introdutorio/texto-introdutorio.component';
 import { SobreComponent } from './componentes/sobre/sobre.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SobreComponent } from './componentes/sobre/sobre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
