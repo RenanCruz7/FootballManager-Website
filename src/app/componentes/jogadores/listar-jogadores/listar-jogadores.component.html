@@ -1,10 +1,10 @@
-<div *ngFor="let jogador of listaJogadores">
-    <p class="ff-fira">{{jogador.id}}</p>
-    <p class="ff-fira">{{jogador.nome}}</p>
-    <p class="ff-fira">{{jogador.idade}}</p>
-    <p class="ff-fira">{{jogador.posicao}}</p>
-    <p class="ff-fira">{{jogador.pe}}</p>
-    <p class="ff-fira">{{jogador.fornecedor}}</p>
-    <p class="ff-fira">{{jogador.ativo}}</p>
-    <br>
-<div>
+<p class="ff-fira lista-texto">Listagem de Jogadores</p>
+<div class="cards">
+    <div class="borda" *ngFor="let jogador of listaJogadores">
+        <p class="ff-fira">Nome:{{jogador.nome}}</p>
+        <p class="ff-fira">Idade:{{jogador.idade}}</p>
+        <p class="ff-fira">Posição:{{jogador.posicao}}</p>
+        <p class="ff-fira">Pé:{{jogador.pe}}</p>
+        <p class="ff-fira">Fornecedor:{{jogador.fornecedor}}</p>
+    </div>
+</div>

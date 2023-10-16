@@ -15,7 +15,7 @@ export class ListarJogadoresComponent{
   }
 
   ngOnInit():void{
-    this.service.listar().subscribe((listaJogadores:any) => {
+    this.service.listar().subscribe((listaJogadores: any) => {
       this.listaJogadores = listaJogadores.content;
     });
   }
