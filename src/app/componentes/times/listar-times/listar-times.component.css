@@ -1,0 +1,38 @@
+.lista-texto{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0 2rem;
+    margin-top: 150px;
+}
+
+.borda{
+    border: 1px solid white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao {
+    font-size: 1rem;
+    color: white;
+    width: 250px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    border: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    margin-top: 45px;
+}

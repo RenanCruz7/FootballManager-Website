@@ -1,1 +1,15 @@
-<p>listar-times works!</p>
+<p class="ff-fira lista-texto">Listagem de Times</p>
+<div class="botao-container">
+    <button  class="botao ff-fira">Cadastrar</button>
+    <button  class="botao ff-fira">Excluir</button>
+    <button  class="botao ff-fira">Atualizar</button>
+</div>
+<div class="cards">
+    <div class="borda" *ngFor="let time of listaTimes">
+        <p class="ff-fira">Nome:{{time.nome}}</p>
+        <p class="ff-fira">Estadio:{{time.estadio}}</p>
+        <p class="ff-fira">Fundação:{{time.fundacao}}</p>
+        <p class="ff-fira">Patrocinador:{{time.patrocinador}}</p>
+        <p class="ff-fira">Mascote:{{time.mascote}}</p>
+    </div>
+</div>
