@@ -15,4 +15,8 @@ export class JogadorService {
   listar(): Observable<Jogador[]>{
     return this.http.get<Jogador[]>(this.API)
   }
+
+  cadastrar(jogador: Jogador): Observable<Jogador> {
+    return this.http.post<Jogador>(this.API, jogador)
+  }
 }

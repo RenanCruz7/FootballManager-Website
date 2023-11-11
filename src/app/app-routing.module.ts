@@ -4,6 +4,7 @@ import { TextoIntrodutorioComponent } from './componentes/texto-introdutorio/tex
 import { ListarJogadoresComponent } from './componentes/jogadores/listar-jogadores/listar-jogadores.component';
 import { ListarTimesComponent } from './componentes/times/listar-times/listar-times.component';
 import { SobreComponent } from './componentes/sobre/sobre.component';
+import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-jogadores/cadastrar-jogadores.component';
 
 
 
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'listar-jogadores',
     component: ListarJogadoresComponent
+  },
+  {
+    path: 'cadastrar-jogadores',
+    component: CadastrarJogadoresComponent
   },
   {
     path: 'listar-times',

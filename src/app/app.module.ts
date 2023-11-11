@@ -9,6 +9,8 @@ import { ListarTimesComponent } from './componentes/times/listar-times/listar-ti
 import { TextoIntrodutorioComponent } from './componentes/texto-introdutorio/texto-introdutorio.component';
 import { SobreComponent } from './componentes/sobre/sobre.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-jogadores/cadastrar-jogadores.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,13 @@ import { HttpClientModule } from '@angular/common/http';
     ListarJogadoresComponent,
     ListarTimesComponent,
     TextoIntrodutorioComponent,
-    SobreComponent
+    SobreComponent,
+    CadastrarJogadoresComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
