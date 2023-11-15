@@ -1,29 +1,43 @@
 <p class="ff-fira titulo">Dados de Cadastro de Jogador</p>
 <body>
-    <form class="formulario">
+    <form class="formulario" #f="ngForm">
         <!--
             Nome do Jogador
         -->
         <label class="campo ff-fira" for="nome">Nome</label>
-        <input name="nome ff-fira" id="nome" class="campo-escrita">
-
+        <input name="nome ff-fira" id="nome" class="campo-escrita" ngModel>
          <!--
             Idade
         -->
         <label class="campo ff-fira" for="idade">Idade</label>
-        <input name="idade" id="idade" class="campo-escrita">
-
+        <input name="idade" id="idade" class="campo-escrita"ngModel>
         <!--
-            Idade
+            Fornecedor
         -->
         <label class="campo ff-fira" id="fornecedor">Fornecedor</label>
-        <input name="fornecedor" id="fornecedor" class="campo-escrita">
-
-        
-
-
-
-
-
+        <input name="fornecedor" id="fornecedor" class="campo-escrita"ngModel>
+        <!--
+            Posição
+        -->
+        <label class="campo ff-fira" id="posicao">Posição</label>
+        <select id="posicao" name="posicao" class="campo-escrita" ngModel required>
+            <option class="ff-fira" value="Goleiro">Goleiro</option>
+            <option class="ff-fira" value="LateralDireito">Lateral Direito</option>
+            <option class="ff-fira" value="LateralEsquerdo">Lateral Esquerdo</option>
+            <option class="ff-fira" value="Zagueiro">Zagueiro</option>
+            <option class="ff-fira" value="Volante">Volante</option>
+            <option class="ff-fira" value="MeioCampista">Meio Campo</option>
+            <option class="ff-fira" value="PontaEsquerda">Ponta Esquerda</option>
+            <option class="ff-fira" value="PontaDireito">Ponta Direito</option>
+            <option class="ff-fira" value="CentroAvante">Centroavante</option>
+          </select>
+        <!--
+            Pé
+        -->
+        <label class="campo ff-fira" id="posicao">Pé</label>
+        <select id="pe" name="pe" class="campo-escrita" ngModel required>
+            <option class="ff-fira" value="DIREITO">DIREITO</option>
+            <option class="ff-fira" value="ESQUERDO">ESQUERDO</option>
+          </select>
     </form>
 </body>
