@@ -1,8 +1,8 @@
 <p class="ff-fira lista-texto">Listagem de Jogadores</p>
 <div class="botao-container">
-    <button routerLink="/cadastrar-jogadores" class="botao ff-fira">Cadastrar</button>
-    <button  class="botao ff-fira">Excluir</button>
-    <button  class="botao ff-fira">Atualizar</button>
+    <app-botao routerLink="/cadastrar-jogadores" [titulo]="cadastrar"></app-botao>
+    <app-botao routerLink="/cadastrar-jogadores" [titulo]="editar"></app-botao>
+    <app-botao routerLink="/cadastrar-jogadores" [titulo]="excluir"></app-botao>
 </div>
 <div class="cards">
     <div class="borda" *ngFor="let jogador of listaJogadores">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { JogadorService } from '../jogador.service';
 import { Jogador } from '../jogador';
 
@@ -10,9 +10,13 @@ import { Jogador } from '../jogador';
 
 export class ListarJogadoresComponent{
   listaJogadores: Jogador[] = []
-
   constructor(private service:JogadorService){
   }
+
+  @Output() cadastrar: string = "Cadastrar"
+  @Output() excluir: string = "Excluir"
+  @Output() editar: string = "Editar"
+
 
   ngOnInit():void{
     this.service.listar().subscribe((listaJogadores: any) => {

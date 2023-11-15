@@ -11,6 +11,7 @@ import { SobreComponent } from './componentes/sobre/sobre.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-jogadores/cadastrar-jogadores.component';
 import { FormsModule } from '@angular/forms';
+import { BotaoComponent } from './componentes/botao/botao.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     ListarTimesComponent,
     TextoIntrodutorioComponent,
     SobreComponent,
-    CadastrarJogadoresComponent
+    CadastrarJogadoresComponent,
+    BotaoComponent
   ],
   imports: [
     BrowserModule,
