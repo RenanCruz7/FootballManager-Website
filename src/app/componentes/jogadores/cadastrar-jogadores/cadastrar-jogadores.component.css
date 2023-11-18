@@ -10,6 +10,8 @@ body {
 .titulo{
     text-align: center;
     font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 95px;
 }
 
 .formulario {
@@ -21,8 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .campo-escrita {

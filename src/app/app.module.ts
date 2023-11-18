@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-jogadores/cadastrar-jogadores.component';
 import { FormsModule } from '@angular/forms';
 import { BotaoComponent } from './componentes/botao/botao.component';
+import { MensagemComponent } from './componentes/mensagem/mensagem.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BotaoComponent } from './componentes/botao/botao.component';
     TextoIntrodutorioComponent,
     SobreComponent,
     CadastrarJogadoresComponent,
-    BotaoComponent
+    BotaoComponent,
+    MensagemComponent
   ],
   imports: [
     BrowserModule,
