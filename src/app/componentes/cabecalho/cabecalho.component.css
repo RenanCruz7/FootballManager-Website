@@ -46,3 +46,27 @@
         margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
     }
 }
+
+/* Consulta de mídia para telas pequenas, como celulares */
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        flex-direction: row; /* Empilha os elementos verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 1rem; /* Ajusta o preenchimento para economizar espaço */
+    }
+
+    .lista {
+        margin-top: 10px; /* Espaçamento superior para separar do título */
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .lista li {
+        margin-right: 3px; /* Remove a margem direita para evitar quebras de linha */
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+    }
+
+    .cabecalho p {
+        margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+    }
+}
+
