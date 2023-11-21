@@ -28,13 +28,12 @@ body {
 }
 
 .campo-escrita {
-    border-radius: 15px;
     padding: 0.9em;
     border: solid;
     border-width: 3px;
     border-radius: 30px;
     color: white;
-    width: 150%;
+    width: 500px
 }
 
 .botao {

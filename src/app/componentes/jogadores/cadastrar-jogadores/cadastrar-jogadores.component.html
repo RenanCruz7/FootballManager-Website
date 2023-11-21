@@ -5,7 +5,7 @@
             Nome do Jogador
         -->
         <label class="campo ff-fira" for="nome">Nome</label>
-        <input name="nome ff-fira" id="nome" class="campo-escrita" [(ngModel)]="jogador.nome" required #nome="ngModel">
+        <input name="nome ff-fira" id="nome" class="campo-escrita" [(ngModel)]="jogador.nome" required minlength="2" #nome="ngModel">
         <div *ngIf="(nome?.invalid && nome?.touched) || nome?.dirty">
             <app-mensagem *ngIf="nome?.errors?.['required']" mensagem="O Campo de nome deve ser preenchido"></app-mensagem>
             <app-mensagem *ngIf="nome?.errors?.['minlength']" mensagem="O Campo deve ter no minimo 2 caracteres"></app-mensagem>
@@ -22,7 +22,7 @@
             Fornecedor
         -->
         <label class="campo ff-fira" id="fornecedor">Fornecedor</label>
-        <input name="fornecedor" id="fornecedor" class="campo-escrita" [(ngModel)]="jogador.fornecedor" required #fornecedor="ngModel">
+        <input name="fornecedor" id="fornecedor" class="campo-escrita" [(ngModel)]="jogador.fornecedor" required minlength="2" #fornecedor="ngModel">
         <div *ngIf="(fornecedor?.invalid && fornecedor?.touched) || fornecedor?.dirty">
             <app-mensagem *ngIf="fornecedor?.errors?.['required']" mensagem="O Campo de fornecedor deve ser preenchido"></app-mensagem>
             <app-mensagem *ngIf="fornecedor?.errors?.['minlength']" mensagem="O Campo deve ter no minimo 2 caracteres"></app-mensagem>
