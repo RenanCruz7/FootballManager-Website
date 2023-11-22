@@ -1,23 +1,47 @@
-.container{
+/* Estilo padrão */
+.container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.box{
+.box {
     width: 600px;
 }
 
-.texto{
+.texto {
     text-align: left;
     text-indent: 5px;
     line-height: 1.5;
     margin: 20px;
 }
 
-.imagem{
+.imagem {
     max-width: 500px;
     margin-right: 20px;
     margin-top: 20px;
-    border: 5px solid white ;
+    border: 5px solid white;
+}
+
+/* Media query para telas menores, como celulares */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Mude para uma direção de coluna para empilhar os elementos */
+        align-items: flex-start; /* Alinhe os itens à esquerda */
+        text-align: center; /* Centralize o texto */
+    }
+
+    .box {
+        width: 80%; /* Utilize a largura máxima disponível */
+    }
+
+    .texto {
+        text-align: center; /* Centralize o texto */
+        margin: 10px; /* Ajuste a margem */
+    }
+
+    .imagem {
+        max-width: 100%; /* Faça a imagem ocupar 100% da largura disponível */
+        margin: 10px 0; /* Ajuste a margem */
+    }
 }
