@@ -9,6 +9,7 @@
 .formulario {
     text-align: center;
     max-width: 400px;
+    margin: 0 auto; /* Adicione esta linha para centralizar o formulário */
 }
 
 .campo {
@@ -25,7 +26,8 @@
     border-width: 3px;
     border-radius: 30px;
     color: white;
-    width: 100%; /* Faça a largura ocupar 100% do container */
+    width: 100%;
+    box-sizing: border-box; /* Adicione esta linha para garantir que a largura inclua padding e borda */
 }
 
 .botao {
@@ -43,19 +45,19 @@
 /* Media query para telas menores, como celulares */
 @media only screen and (max-width: 600px) {
     .titulo {
-        font-size: 24px; /* Reduza o tamanho da fonte */
-        margin-bottom: 60px; /* Ajuste a margem inferior */
+        font-size: 24px;
+        margin-bottom: 60px;
     }
 
     .formulario {
-        max-width: 100%; /* Faça o formulário ocupar 100% da largura disponível */
+        max-width: 100%;
     }
 
     .campo-escrita {
-        width: 100%; /* Faça a largura ocupar 100% do container */
+        width: 100%;
     }
 
     .botao {
-        width: 80%; /* Utilize a largura máxima disponível */
+        width: 80%;
     }
 }
