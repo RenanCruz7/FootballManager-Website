@@ -52,7 +52,7 @@
     .cabecalho {
         flex-direction: row; /* Empilha os elementos verticalmente */
         align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 20px;
+        padding: 13px;
     }
 
     .lista {
