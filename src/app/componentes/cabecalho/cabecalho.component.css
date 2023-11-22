@@ -29,52 +29,20 @@
     font-size: 1.2rem;
 }
 
-/* Consulta de mídia para telas menores */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .cabecalho {
-        flex-direction: row; /* Empilha os elementos verticalmente */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-    }
-
-    .lista {
-        margin-top: 10px; /* Espaçamento superior para separar do título */
-        justify-content: flex-start; /* Alinha os itens à esquerda */
-    }
-
-    .lista li {
-        margin-right: 10px ; /* Remove a margem direita para evitar quebras de linha */
-        margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
-    }
-}
-
-/* Consulta de mídia para telas pequenas, como celulares */
-@media screen and (max-width: 480px) {
-    .cabecalho {
-        flex-direction: row; /* Empilha os elementos verticalmente */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 13px;
-    }
-
-    .lista {
-        margin-top: 10px; /* Espaçamento superior para separar do título */
-        justify-content: flex-start; /* Alinha os itens à esquerda */
-    }
-
-    .lista li {
-        margin-right: 25px; /* Remove a margem direita para evitar quebras de linha */
-        margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+        padding: 1rem; /* Ajuste o preenchimento para economizar espaço */
     }
 
     .cabecalho p {
-        margin-right: 20px; /* Adiciona espaçamento abaixo do título */
-        font-size: 20px;
+        font-size: 1.2rem; /* Reduza o tamanho da fonte */
+    }
+
+    .lista li {
+        margin-right: 10px; /* Reduza a margem ainda mais para economizar espaço */
     }
 
     .lista li a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
+        font-size: 1rem; /* Reduza o tamanho da fonte para links */
     }
 }
-
