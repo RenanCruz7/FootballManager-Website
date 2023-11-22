@@ -52,7 +52,7 @@
     .cabecalho {
         flex-direction: row; /* Empilha os elementos verticalmente */
         align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 1rem; /* Ajusta o preenchimento para economizar espaço */
+        padding: 20px;
     }
 
     .lista {
@@ -61,12 +61,20 @@
     }
 
     .lista li {
-        margin-right: 3px; /* Remove a margem direita para evitar quebras de linha */
+        margin-right: 25px; /* Remove a margem direita para evitar quebras de linha */
         margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
     }
 
     .cabecalho p {
-        margin-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+        margin-right: 20px; /* Adiciona espaçamento abaixo do título */
+        font-size: 25px;
+    }
+
+    .lista li a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
     }
 }
 
