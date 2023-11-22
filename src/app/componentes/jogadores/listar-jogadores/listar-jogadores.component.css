@@ -1,10 +1,17 @@
-.lista-texto{
+/* Estilo padrão */
+.lista-texto {
     font-size: 30px;
     text-align: center;
     margin-top: 50px;
 }
 
-.cards{
+.botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -13,15 +20,31 @@
     margin-top: 150px;
 }
 
-.borda{
+.borda {
     border: 1px solid white;
     padding: 2rem;
     border-radius: 5px;
     margin: auto;
 }
 
-.botao-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Media query para telas menores, como celulares */
+@media only screen and (max-width: 600px) {
+    .lista-texto {
+        font-size: 24px; /* Reduza o tamanho da fonte */
+        margin-top: 30px; /* Ajuste a margem superior */
+    }
+
+    .botao-container {
+        flex-direction: column; /* Coloque os botões em uma coluna */
+        align-items: center; /* Alinhe os botões ao centro */
+    }
+
+    .cards {
+        margin-top: 100px; /* Ajuste a margem superior */
+    }
+
+    .borda {
+        width: 80%; /* Utilize a largura máxima disponível */
+        margin-bottom: 20px; /* Ajuste a margem inferior */
+    }
 }
