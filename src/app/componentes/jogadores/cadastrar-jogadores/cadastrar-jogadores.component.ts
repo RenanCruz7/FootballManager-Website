@@ -24,14 +24,23 @@ export class JogadorModel implements Jogador {
 export class CadastrarJogadoresComponent {
 
   jogador: Jogador = new JogadorModel('',0,'','','')
-
+    
   constructor(
     private service: JogadorService,
     private router: Router,) {}
 
   @Output() cadastrar: string = "Cadastrar"
   
-  criarJogador() {
-    this.service.cadastrar(this.jogador).subscribe();
+  criarJogador(form: NgForm) {
+    if(form.valid){
+      this.service.cadastrar(this.jogador).subscribe(result => this.paginaSucesso());
+    }else{
+      alert("Formulario Invalido por favor preencha corretamente")
+    }
+  }
+
+  paginaSucesso(){
+    alert("Jogador Cadastrado com Sucesso")
+    this.router.navigate(['/listar-jogadores']);
   }
 }
