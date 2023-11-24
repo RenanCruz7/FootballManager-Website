@@ -20,6 +20,7 @@ export class ListarJogadoresComponent{
 
   ngOnInit():void{
     this.service.listar().subscribe((listaJogadores: any) => {
+      console.log(listaJogadores)
       this.listaJogadores = listaJogadores.content;
     });
   }
