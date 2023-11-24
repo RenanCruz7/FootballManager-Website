@@ -13,6 +13,7 @@ import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-j
 import { FormsModule } from '@angular/forms';
 import { BotaoComponent } from './componentes/botao/botao.component';
 import { MensagemComponent } from './componentes/mensagem/mensagem.component';
+import { IdadeValidaDirective } from './directives/idade-valida.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MensagemComponent } from './componentes/mensagem/mensagem.component';
     SobreComponent,
     CadastrarJogadoresComponent,
     BotaoComponent,
-    MensagemComponent
+    MensagemComponent,
+    IdadeValidaDirective
   ],
   imports: [
     BrowserModule,
