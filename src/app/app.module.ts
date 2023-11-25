@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { BotaoComponent } from './componentes/botao/botao.component';
 import { MensagemComponent } from './componentes/mensagem/mensagem.component';
 import { IdadeValidaDirective } from './directives/idade-valida.directive';
+import { SucessoComponent } from './componentes/sucesso/sucesso.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { IdadeValidaDirective } from './directives/idade-valida.directive';
     CadastrarJogadoresComponent,
     BotaoComponent,
     MensagemComponent,
-    IdadeValidaDirective
+    IdadeValidaDirective,
+    SucessoComponent
   ],
   imports: [
     BrowserModule,
