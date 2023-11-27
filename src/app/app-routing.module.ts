@@ -5,6 +5,7 @@ import { ListarJogadoresComponent } from './componentes/jogadores/listar-jogador
 import { ListarTimesComponent } from './componentes/times/listar-times/listar-times.component';
 import { SobreComponent } from './componentes/sobre/sobre.component';
 import { CadastrarJogadoresComponent } from './componentes/jogadores/cadastrar-jogadores/cadastrar-jogadores.component';
+import { SucessoComponent } from './componentes/sucesso/sucesso.component';
 
 
 
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'sobre',
     component: SobreComponent
+  },
+  {
+    path: 'sucesso',
+    component: SucessoComponent
   },
 ]
 

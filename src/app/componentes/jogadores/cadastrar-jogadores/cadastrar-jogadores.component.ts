@@ -41,6 +41,6 @@ export class CadastrarJogadoresComponent {
 
   paginaSucesso(){
     alert("Jogador Cadastrado com Sucesso")
-    this.router.navigate(['/listar-jogadores']);
+    this.router.navigate(['/sucesso']);
   }
 }
