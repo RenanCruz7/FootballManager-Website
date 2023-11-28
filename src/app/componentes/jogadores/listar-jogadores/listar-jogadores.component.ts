@@ -16,12 +16,15 @@ export class ListarJogadoresComponent{
   @Output() cadastrar: string = "Cadastrar"
   @Output() excluir: string = "Excluir"
   @Output() editar: string = "Editar"
-
-
+  
+  /**
+   *  Caso esteja utilizando a API do java trocar a linha 27 pela seguinte linha
+   *  this.listaJogadores = listaJogadores.content;
+   */
   ngOnInit():void{
     this.service.listar().subscribe((listaJogadores: any) => {
       console.log(listaJogadores)
-      this.listaJogadores = listaJogadores.content;
+      this.listaJogadores = listaJogadores
     });
   }
 

@@ -7,8 +7,8 @@ import { Jogador } from './jogador';
   providedIn: 'root'
 })
 export class JogadorService {
-
-  private readonly API = "http://localhost:8080/jogadores"
+  private readonly APIJAVA = "http://localhost:8080/jogadores"
+  private readonly API = "http://localhost:3000/jogadores"
 
   constructor(private http: HttpClient) { }
 

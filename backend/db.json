@@ -1,0 +1,29 @@
+{
+  "jogadores": [
+    {
+      "id": 1,
+      "nome": "Matheus",
+      "idade": "23",
+      "posicao": "CentroAvante",
+      "pe": "ESQUERDO",
+      "fornecedor": "Nike"
+    },
+    {
+      "id": 2,
+      "nome": "Renan",
+      "idade": "21",
+      "posicao": "CentroAvante",
+      "pe": "ESQUERDO",
+      "fornecedor": "Nike"
+    },
+    {
+      "nome": "Teste",
+      "idade": "25",
+      "posicao": "LateralDireito",
+      "pe": "ESQUERDO",
+      "fornecedor": "Nike",
+      "ativo": true,
+      "id": 3
+    }
+  ]
+}
